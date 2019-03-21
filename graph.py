@@ -30,8 +30,6 @@ app.layout = html.Div(
 	]
 )
 
-
-
 @app.callback(Output('live-bitcoin', 'figure'), events = [Event('graph-update', 'interval')])
 def update_graph():
 	global X
@@ -41,8 +39,6 @@ def update_graph():
 
 	for x in db.readline():
 		datay += x
-
-	
 
 	X.append(X[-1]+0.1)
 	Y.append(int(datay[0:4]))
@@ -57,14 +53,6 @@ def update_graph():
 	return {'data':[data], 'layout': go.Layout(	xaxis = dict(range=[min(X), max(X)]),
 												yaxis = dict(range=[min(Y), max(Y)])
 											)}
-
-
-
+											
 if __name__ == '__main__':
 	app.run_server(debug=True)
-
-	
-	
-
-
-	

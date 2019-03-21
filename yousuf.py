@@ -20,7 +20,6 @@ while LOOP:
 
 	valueit = values[it]
 	calc = values[it-1]
-	
 
 	if float(valueit)<float(calc):
 		playsound('audio.mp3')
@@ -32,6 +31,3 @@ while LOOP:
 
 	time.sleep(1)
 	it += 1
-
-
-	
