@@ -16,4 +16,4 @@ Used for the """project""":
 	- [Bitcoin](https://api.coinmarketcap.com/v1/ticker/bitcoin/)
 	- A lot of tutorials
 		
-	<iframe width="1423" height="588" src="https://www.youtube.com/embed/81zBnjh2VT8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="align: center"></iframe>
+	[![yousuf](https://img.youtube.com/vi/81zBnjh2VT8/0.jpg)](https://www.youtube.com/watch?v=81zBnjh2VT8)
