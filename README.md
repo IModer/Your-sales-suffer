@@ -16,4 +16,7 @@ Used for the """project""":
 	- [Bitcoin](https://api.coinmarketcap.com/v1/ticker/bitcoin/)
 	- A lot of tutorials
 		
-	[![yousuf](https://img.youtube.com/vi/81zBnjh2VT8/0.jpg)](https://www.youtube.com/watch?v=81zBnjh2VT8)
+## Idea:
+	<a href="http://www.youtube.com/watch?feature=player_embedded&v=81zBnjh2VT8
+" target="_blank"><img src="http://img.youtube.com/vi/81zBnjh2VT8/0.jpg" 
+alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
