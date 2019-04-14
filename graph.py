@@ -9,25 +9,26 @@ import dash_html_components as html
 import plotly
 import plotly.graph_objs as go
 from collections import deque
+import yousuf
 
-db = open("data.txt", "r")
+#db = open("data.txt", "r")
 
 X = deque(maxlen=20)
 Y = deque(maxlen=20)
-
 X.append(0)
 Y.append(0)
+iter = 0
 
 app = dash.Dash(__name__)
 app.layout = html.Div(
 		
 	[
-		dcc.Graph(id='live-bitcoin', animate=True),
+		dcc.Graph(id='live-bitcoin', animate=False),
 		dcc.Interval(
 			id='graph-update', 
-			interval=1000
+			interval=1000*10
 			)	
-	]
+	], style={'height' : '800vh', 'width' : '150vh'}
 )
 
 @app.callback(Output('live-bitcoin', 'figure'), events = [Event('graph-update', 'interval')])
@@ -35,13 +36,12 @@ def update_graph():
 	global X
 	global Y
 
-	datay = ""
+	yousuf.bitcoin()
 
-	for x in db.readline():
-		datay += x
+	datay = yousuf.bitdata[len(yousuf.bitdata)-1]
 
 	X.append(X[-1]+0.1)
-	Y.append(int(datay[0:4]))
+	Y.append(float(datay))
 
 	data = go.Scatter(
 		x = list(X),
@@ -49,7 +49,7 @@ def update_graph():
 		name = 'Scatter',
 		mode = 'lines+markers'
 		)
-
+	#iter += 1
 	return {'data':[data], 'layout': go.Layout(	xaxis = dict(range=[min(X), max(X)]),
 												yaxis = dict(range=[min(Y), max(Y)])
 											)}
