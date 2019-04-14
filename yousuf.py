@@ -23,11 +23,14 @@ while LOOP:
 
 	if float(valueit)<float(calc):
 		playsound('audio.mp3')
-		print(it,'; Congrats asshole, the Bitcoin value is dropping:', valueit)
+		print(it,'; ↓ ,the Bitcoin value is dropping:', valueit)
+	elif float(valueit)>float(calc):
+		print(it,'; ↑ the Bitcoin value is rising', valueit)
 	else:
-		print(it,'; Congrats, the Bitcoin value is above the previous:', valueit)
+		print(it,'; -- the Bitcoin value is not moveing', valueit)
+
 
 	f.write(valueit + "\n")
 
-	time.sleep(1)
+	time.sleep(10)
 	it += 1
