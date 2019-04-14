@@ -25,7 +25,7 @@ No right reserved
 
  ## Used for the """project"""
 
-- [dash](https://www.dash.org)
+- [dash](https://plot.ly/products/dash/)
 - [Bitcoin](https://api.coinmarketcap.com/v1/ticker/bitcoin/)
 - A lot of tutorials
 
