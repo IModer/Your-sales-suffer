@@ -25,7 +25,7 @@ No right reserved
 
  ## Used for the """project"""
 
-- [dash](www.dash.org)
+- [dash](https://www.dash.org)
 - [Bitcoin](https://api.coinmarketcap.com/v1/ticker/bitcoin/)
 - A lot of tutorials
 
