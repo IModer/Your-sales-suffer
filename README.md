@@ -20,7 +20,6 @@
 
 
 - Make a breakfast
-- Run both python files at the same time (you can but they cant access the """database""" so it wont work)
 
 No right reserved
 
