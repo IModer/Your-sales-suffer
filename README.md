@@ -30,5 +30,5 @@ No right reserved
 - [Bitcoin](https://api.coinmarketcap.com/v1/ticker/bitcoin/)
 - A lot of tutorials
 
- ## Idea:
+ Idea:
 	[Video](http://www.youtube.com/watch?feature=player_embedded&v=81zBnjh2VT8)
