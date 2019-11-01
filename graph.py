@@ -17,7 +17,7 @@ X = deque(maxlen=20)
 Y = deque(maxlen=20)
 X.append(0)
 Y.append(0)
-iter = 0
+#iter = 0
 
 app = dash.Dash(__name__)
 app.layout = html.Div(
@@ -31,7 +31,7 @@ app.layout = html.Div(
 	], style={'height' : '800vh', 'width' : '150vh'}
 )
 
-@app.callback(Output('live-bitcoin', 'figure'), events = [Event('graph-update', 'interval')])
+@app.callback(Output('live-bitcoin', 'figure'), events = [Event('graph-update','Interval')])
 def update_graph():
 	global X
 	global Y
