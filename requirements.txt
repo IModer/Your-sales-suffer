@@ -1,2 +1,4 @@
 dash==0.30.0
 plotly>=3.7.0
+requests
+playsound
